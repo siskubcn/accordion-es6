@@ -1,0 +1,74 @@
+.Accordion {
+  font: 1rem/1.4 "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  border: 1px solid #1e859f; }
+
+.Accordion-header {
+  background-color: #2899b6;
+  text-align: center;
+  font-weight: 700;
+  padding: .8rem 1.8rem;
+  display: block;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+  border-bottom: 1px solid #1e859f;
+  text-shadow: 0 2px 5px #1e859f;
+  overflow: hidden; }
+
+.Accordion-header::before {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  content: "";
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%; }
+
+.Accordion-header::after {
+  content: "+";
+  font-size: 1.4rem;
+  line-height: 1;
+  float: left;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
+.Accordion-header:hover {
+  background-color: #3aacca;
+  cursor: pointer;
+  text-shadow: none; }
+
+.Accordion-header.is-closed + .Accordion-content {
+  max-height: 0; }
+
+.Accordion-header.is-closed::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
+.Accordion-content {
+  background-color: #eee;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  position: relative;
+  padding: 0 20px;
+  background: #f1f1f1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  max-height: 500px;
+  overflow: hidden;
+  margin: 0; }
+
+/*# sourceMappingURL=accordion.css.map */

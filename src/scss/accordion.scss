@@ -1,0 +1,96 @@
+/////////////////////////////////////////////////////////////////////
+///
+//  Frontend Technical test for Schibsted | Accordion JS ES6
+/// Accordion JS
+///
+/////////////////////////////////////////////////////////////////////
+///
+///
+///
+/// namespace                   --> must be written in camel case,
+///                                optional and allows you to write CSS that will not conflict
+///                                with other libraries
+/// ComponentName               --> must be written in pascal case,
+///                                is your top level component such as Form.
+///                                Example: .OfferBtn
+/// ComponentName-descendentName -> must be written in camel case, is a part of your component that
+///                                is applying styles on the components behalf.
+///                                Example:  .OfferBtn-pricebox
+/// ComponentName--modifierName --> must be written in camel case, is a presentation class that modifies
+///                                the base class in some way.
+///                                Example:  .OfferBtn--small
+/// ComponentName.is-stateName -->  must be written in camel case and represents the current state of the element
+///
+/// u-utilityName              --> can add styling to just about any component, examples: u-inlineBlock, u-clearfix
+///
+/////////////////////////////////////////////////////////////////////////
+
+
+.Accordion {
+    & {
+        font: 1rem/1.4 "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        border: 1px solid #1e859f;
+    }
+    &-header {
+        & {
+            background-color: #2899b6;
+            text-align: center;
+            font-weight: 700;
+            padding: .8rem 1.8rem;
+            display: block;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color .5s ease-in-out;
+            border-bottom: 1px solid #1e859f;
+            text-shadow: 0 2px 5px #1e859f;
+            overflow: hidden;
+        }
+        &::before {
+            transition: all .2s ease;
+            content: "";
+            border: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+        }
+        &::after {
+            content: "+";
+            font-size: 1.4rem;
+            line-height: 1;
+            float: left;
+            transition: transform .3s ease-in-out;
+            transform: rotate(-225deg);
+            transform-origin: 50% 50%;
+        }
+        &:hover {
+            background-color: #3aacca;
+            cursor: pointer;
+            text-shadow: none;
+        }
+        &.is-closed + .Accordion-content {
+            max-height: 0;
+        }
+        &.is-closed::after {
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+        }
+    } //END Accordion-header
+
+    &-content {
+        background-color: #eee;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        transition: all .2s;
+        position: relative;
+        padding: 0 20px;
+        background: #f1f1f1;
+        transition: all .5s;
+            max-height: 500px;
+        overflow: hidden;
+        margin:0;
+    } //END Accordion-content
+
+}

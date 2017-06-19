@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Accordion library ES6 | Technical test Schibsted</title>
+        <meta name="description" content="Accordion to navigate in multiple documents in a single container.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/css/base.css">
+        <link rel="stylesheet" href="build/css/accordion.css">
+    </head>
+    <body>
+
+    <div class="markdown">
+        <article class="markdown-body">
+            <h1>Accordion ES6</h1>
+            <p>An accordion module written in ES6 syntax.</p>
+
+            <h2>Sample Usage</h2>
+            <div class="highlight highlight-source-js">
+                <pre>   accordionTest = <span class="pl-k">new</span> myAccordion( element, accordionSettings );</pre>
+            </div>
+
+            <h2>Settings</h2>
+        <pre><code>
+    let <span class="pl-k">accordionSettings</span> = {
+        'oneAtATime': true,
+        'closedOnStart': false,
+        'openSlideIndex': 0,
+        'elementHeaderClass': 'Accordion-header',
+        'elementContentClass': 'Accordion-content',
+        'accordionClosedClass': 'is-closed'
+    }
+        </code></pre>
+
+            <h2>Demo:</h2>
+        </article>
+
+        <dl class="Accordion" role="tablist" aria-multiselectable="false">
+          <dt class="Accordion-header is-closed">Noticias: Venta</dt>
+          <dd class="Accordion-content">
+            <p>El sector de la venta directa crece en España un 5,59% en 2016, hasta 700 millones</p>
+
+            <p>El sector de la venta directa en España, que está formado por casi 150.000 emprendedores, elevó sus ventas un 5,6% en 2016, hasta alcanzar los 707,5 millones de euros, según ha informado la Asociación de Venta Directa (AVD) en un comunicado. En concreto, el incremento de la facturación se debe al aumento del valor del ticket medio, que se sitúa en 74,80 euros, un 11% superior al de 2015. Además, el sector ha suministrado 5,4 millones de pedidos a casi 9,5 millones de consumidores.</p>
+          </dd>
+          <dt class="Accordion-header">Noticias: Alquiler</dt>
+          <dd class="Accordion-content">
+            <p>Los precios de los alquileres han subido, sí. Un 15,9% de media durante 2016, según el último informe publicado por idealista. También es cierto que los arrendamientos en Madrid y Barcelona se encuentran en máximos históricos, y las rentas son hoy un 4,2% y un 18,5% más caras que el punto álgido de la burbuja. Y, ante ambas certezas, ya hay quien se ha encargado de buscar culpable: los pisos turísticos.</p>
+          </dd>
+          <dt class="Accordion-header">Noticias: Vacacional</dt>
+          <dd class="Accordion-content">
+            <p>Son las plataformas digitales líderes en alquileres en todo el mundo, tanto turísticos como urbanos. Están presentes en casi 200 países, conectan al año a más de 80 millones de viajeros con otros tantos propietarios de pisos y apartamentos, ofertan inmuebles en más de 30.000 ciudades y hace años que se fijaron en Mallorca como destino estratégico de vivienda vacacional. Se trata de las norteamericanas Airbnb y Homeaway, que han experimentado un crecimiento exponencial en Baleares al calor del auge del alquiler vacacional.</p>
+          </dd>
+        </dl>
+    </div>
+
+    <script src="build/js/main.bundle.js"></script>
+
+    </body>
+</html>
