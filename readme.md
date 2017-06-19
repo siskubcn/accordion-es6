@@ -1,6 +1,9 @@
 # Accordion ES6
 
 Módulo Accordion realizado en es6 para la prueba técnica de frontend.
+
+https://siskubcn.github.io/accordion-es6/
+
 ##### Herramientas utilizadas
   - Yarn para el manejo de dependencias
   - Gulp para automatizar tareas (postcss, sass, sourcemaps, browser-sync...)
@@ -26,9 +29,6 @@ $  gulp build o gulp watch (lanzará el browser con BrowserSync)
 - Styles
     - accordion.scss ---------> fichero sass aplicando SUIT CSS Naming Convention
     
-
-https://siskubcn.github.io/accordion-es6/
-
 
 --------------------------------------------------------------------------------------
 
