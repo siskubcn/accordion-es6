@@ -25,6 +25,10 @@ $  gulp build o gulp watch (lanzará el browser con BrowserSync)
     - utilities.js ----> funciones que utiliza el módulo del accordion
 - Styles
     - accordion.scss ---------> fichero sass aplicando SUIT CSS Naming Convention
+    
+
+https://siskubcn.github.io/accordion-es6/
+
 
 --------------------------------------------------------------------------------------
 
