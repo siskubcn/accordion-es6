@@ -1,6 +1,6 @@
 # Accordion ES6
 
-Módulo Accordion realizado en es6 para la prueba técnica de frontend.
+Módulo Accordion realizado en es6.
 
 https://siskubcn.github.io/accordion-es6/
 
